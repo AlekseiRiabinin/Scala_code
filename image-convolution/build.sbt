@@ -7,5 +7,6 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "org.scala-lang.modules" %% "scala-swing" % "3.0.0",
       "org.scalatest" %% "scalatest" % "3.2.16" % Test
-    )
+    ),
+    Compile / run / mainClass := Some("ImageConvolution")
   )

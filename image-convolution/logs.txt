@@ -1,0 +1,15 @@
+User@Aleksei-PC MINGW64 /c/MISIS_DataEngineering/BigData/hw1/Scala_code/image-convolution (main)
+$ sbt "run input.png output.png 3 3 9 1 1 1 1 1 1 1 1 1"
+[info] welcome to sbt 1.10.6 (Oracle Corporation Java 21.0.4)
+[info] loading settings for project image-convolution-build-build from metals.sbt...
+[info] loading project definition from C:\MISIS_DataEngineering\BigData\hw1\Scala_code\image-convolution\project\project
+[info] loading settings for project image-convolution-build from metals.sbt...
+[info] loading project definition from C:\MISIS_DataEngineering\BigData\hw1\Scala_code\image-convolution\project
+[success] Generated .bloop\image-convolution-build.json
+[success] Total time: 5 s, completed Dec 18, 2024, 2:51:08 AM
+[info] loading settings for project root from build.sbt...
+[info] set current project to image-convolution (in build file:/C:/MISIS_DataEngineering/BigData/hw1/Scala_code/image-convolution/)       
+[info] running ImageConvolution input.png output.png 3 3 9 1 1 1 1 1 1 1 1 1
+Kernel size: 3 x 3, divisor=9
+[success] Total time: 2 s, completed Dec 18, 2024, 2:51:11 AM
+←[0J

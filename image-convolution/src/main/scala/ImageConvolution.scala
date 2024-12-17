@@ -67,7 +67,7 @@ object ImageConvolution:
       outputImage.setRGB(x, y, (red << 16) | (green << 8) | blue | 0xFF000000)
     ImageIO.write(outputImage, "PNG", File(filename))
 
-  @main def main(args: String*): Unit =
+  def main(args: Array[String]): Unit =
     val (kernelWidth, kernelHeight, kernelDivisor) = (args(2).toInt, args(3).toInt, args(4).toInt)
     println(s"Kernel size: $kernelWidth x $kernelHeight, divisor=$kernelDivisor")
     val kernel = new ArrayData(kernelWidth, kernelHeight)
@@ -79,3 +79,5 @@ object ImageConvolution:
 
     val dataArrays = getArrayDataFromImage(args(0)).map(convolute(_, kernel, kernelDivisor))
     writeOutputImage(args(1), dataArrays)
+
+// sbt "run input.png output.png 3 3 9 1 1 1 1 1 1 1 1 1"
